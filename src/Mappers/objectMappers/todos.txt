@@ -1,0 +1,30 @@
+add .value to person validation for all fields
+change work to worq
+change family to fam
+add summary
+add medical
+add provider id
+add instituion id
+
+next:
+    change family to fam every where
+    change work to worq every where
+next: 
+    add medical validation
+    implement object validation for adding a person
+next: 
+    add phones to contact
+    add name and description to location schema and validation
+    add text messages to the schema and validation
+    update the schemas in api docs
+    test new data changes for saving and setting
+    add "actual_Type": "date/time" property to all date or time fields
+    Add contact information to work and visitiations object schemas, and validate and map//for later
+    update the indexes for:
+        create institution_ID index
+
+todo: 
+    add provider table
+    add institution table
+    add institution data table
+    add aggregate data table (state, city, district ...)

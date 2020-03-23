@@ -1,0 +1,185 @@
+module.exports = {
+    person:
+    {
+        user_ID,
+        first_Name,
+
+        middle_Name,
+
+        last_Name,
+
+        picture_ID,
+
+        summary,
+
+        gender,
+
+        age,
+
+        residences:{
+
+            lat,
+    
+            long,
+    
+            number,
+    
+            road,
+    
+            residence_Types: {
+
+                rural,
+        
+                urban,
+        
+                house,
+        
+                apartment,
+        
+                shared
+            },
+    
+            city,
+    
+            burough,
+    
+            state,
+    
+            exposure_Count,
+    
+            co_Dwellers
+    
+        },
+        work: {    
+            profession,
+    
+            last_Visit_Time,
+    
+            last_Visit_Date,
+    
+            last_Visit_Duration,
+    
+            location: {
+
+                lat,
+        
+                long,
+        
+                number,
+        
+                road,
+        
+                type,
+        
+                city,
+        
+                burough,
+        
+                state,
+        
+                contact_Count,
+        
+            }
+        },
+        family: {
+    
+            number_In_Town,
+    
+            number_Recently_In_Town,
+    
+            number_Contacted,
+    
+            familyMember: {
+
+                first_Name,
+        
+                middle_Name,
+        
+                last_Name,
+        
+                user_ID,
+        
+                relationship,
+        
+                exposure,
+            }
+        },
+
+        primary_Phone_Number,
+
+        phone: {
+
+            owner_ID,
+    
+            relationship,
+    
+            number,
+    
+            first_Name,
+    
+            middle_Name,
+    
+            last_Name
+        },
+        visitations: {
+
+            time,
+    
+            date,
+    
+            duration,
+    
+            location
+        },
+        contact: {
+
+            first_Name,
+    
+            middle_Name,
+    
+            last_Name,
+    
+            user_ID,
+    
+            exposure_Type: {
+    
+                physical: {
+                    
+        
+                    hand_Shake,
+        
+                    hug,
+        
+                    long_Duration_Body_Contac,
+        
+                    general_Touch,
+                },
+        
+                spacial: {
+        
+                    shared_Room,
+        
+                    personal_Spacee,
+        
+                },
+        
+                utility: {
+        
+                    shared_Foodware,
+        
+                    shared_Food,
+        
+                    shared_Vehicle,
+        
+                }
+            },
+    
+            time,
+    
+            location,
+    
+            duration,
+        }
+
+    }
+}

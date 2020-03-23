@@ -1,0 +1,35 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  HoSaNel
+
+  Sample SAM Template for HoSaNel
+  
+# More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
+Globals:
+  Function:
+    Timeout: 3
+Parameters:
+  BucketNamePrefix:
+    Type: String
+    Default: maqaalayste
+Resources:
+  hudhudFunction:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      CodeUri: src/
+      Handler: app.lambdaHandler
+      Runtime: nodejs12.x
+      Policies:
+      - S3CrudPolicy:
+          BucketName: !Sub "${BucketNamePrefix}-get-object"
+      - DynamoDBCrudPolicy:
+          TableName: hosanel-persons
+      Environment:
+        Variables:
+          s3Bucket: maqaalayste
+          personsTableName: hosanel-persons
+
+
+
+
